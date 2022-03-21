@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人博客-小妍子的奇妙博客之旅</title>
+    <style tyle="text/css">
+        #header a{color:rgb(25, 25, 26);text-decoration: none;}
+        #header{ font-size: 12px;
+            height: 20px;
+            border-bottom:1px inset rgb(85, 71, 63);
+            background-color: rgb(248, 248, 248);
+            margin-bottom: 5px;
+            padding-left:  10px;padding-top: 5px;
+        }
+        #start
+        {
+            background-image: url(images/picture2.png);
+            background-size:1260px 600px;
+            font-family: 华文新魏;
+            background-repeat:no-repeat;
+            background-attachment:fixed;
+        }
+        #Y{text-align: right;padding-top: 20px;}
+        #title{
+            width:70px;height:70px;border-radius:100%;overflow:hidden;
+            margin-top: 70px;
+            margin-left: 30px;
+            float:left;
+            position:relative;
+            cursor:pointer;
+        }
+        #T{padding-left: 20px;margin-top: 120px;font-size:25px;color:rgb(39, 39, 30)}
+        #two{
+            display:flex;
+            width:1260px;
+            height:30px;
+            flex-flow: row nowrap;
+            margin-top: 10px;
+            background-color: rgba(214, 208, 174, 0);
+            justify-content:flex-start;
+        }
+        .item{
+            width:200px;
+            height:30px;
+            line-height: 30px;
+            text-align: center;
+            background-color: rgba(214, 208, 174, 0.35);
+            box-sizing: border-box;
+            margin:0px 20px;
+            font-size: 20px;
+        }
+        .item:hover{
+            background-color: rgb(214, 216, 191);
+        }
+        .item:nth-child(3){background-color: rgb(214, 216, 191);}
+        .item a{
+            text-decoration: none;
+            color:aliceblue;
+            font-size: large;
+        }
+        #C{
+            margin-top: 10px; background-color: rgb(185, 183, 169,0.4);
+            width: 1260px;
+            display:flex;
+            flex-flow: row nowrap;
+            justify-content:flex-start;
+        }
+        #first{
+            margin-top: 40px;margin-left: 100px;
+            font-size: 20px;
+        }
+        .picture{
+            width:30px;
+            height: 30px;
+            border-radius:80% 90% 20% 100%;
+            overflow: hidden;
+            float:left;
+            opacity: 0.8;
+        }
+        textarea{background-color: rgba(233, 237, 240,0);}
+        input:last-child{
+            background:linear-gradient(to bottom,rgba(141, 155, 154, 0.3),rgba(228, 248, 174, 0.3));
+        }
+        input:last-child:hover{
+            background: linear-gradient(to bottom,rgb(156, 170, 107),rgb(231, 149, 149));;
+        }
+        h4{text-shadow: 1px 1px 2px rgb(47, 49, 49);}
+        #second{margin-left: 50px;margin-top: 20px;}
+        span{
+            display:inline-table;
+            width:200px;
+            height:50px;
+            text-align: center;
+            padding-top: 30px;
+            margin: 20px 5px 5px 5px;
+            background-color: rgba(140, 177, 165,0.5);
+        }
+        span:first-child:hover{
+            background-color: rgba(171, 189, 109, 0.5);
+        }
+        span:nth-child(2):hover{background-color: rgba(129, 79, 175,0.5);}
+        
+        .other{
+            float: right;
+        }
+        #second a{
+            text-decoration: none;
+            color:black;
+            font-size: 20px;
+        }
+        #first a{
+            text-decoration: none;
+            color:black;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<div>
+    <div id="header">
+        <a href="首页.html">home</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="关于我.html">关于我</a>
+    </div>
+    <div id="start">
+        <div id="Y">沁 淋 . 妍 的 个 人 博 客 ......</div>
+        <div id="title">
+            <img src="images/picture7.jpg" alt="美女" width="70" height="70"/>
+        </div>
+            <div id="T">沁 淋 . 妍</div>
+            <div id="two">
+                <div class="item">
+                    <a href="首页.html">首页</a>
+                </div>
+                <div class="item">
+                    <a href="知识圣地.html">知识圣地</a>
+                </div>
+                <div class="item">
+                    <a href="blog留言.html">blog留言</a>
+                </div>
+                <div class="item">
+                    <a href="关于我.html">关于我</a>
+                </div>
+            </div>
+            <div id="C">
+                <div id="first">
+                    您现在的位置是:&nbsp;&nbsp;&nbsp;<a href="首页.html">首页</a> &gt; <a href="blog留言.html">博客留言</a> &gt;
+                    <hr/>
+                    <form name="myForm">   
+                        <h4><div class="picture"><img src="images/look.png" width="30" height="30"/></div>&nbsp;你对博客之旅的满意程度：</h4>
+                        &nbsp;&nbsp;&nbsp;<input type="radio" name="满意" value="非常满意">非常满意
+                        <input type="radio" name="满意" value="比较满意">比较满意
+                        <input type="radio" name="满意" value="不满意">不满意
+                        <input type="radio" name="满意" value="很讨厌">很讨厌<br/>
+                        <h4><div class="picture"><img src="images/look.png" width="30" height="30"/></div>&nbsp;既然来了，留个言吧：</h4>
+                        &nbsp;&nbsp;&nbsp;<textarea rows="5" cols="60" value="4"></textarea> 
+                        <input type="submit" value="畅言一下"/>
+                    </form>
+                </div>
+                <div id="second">
+                    <div class="line">
+                        <span><a href="关于我.html">关于博主</a></span>
+                        <span><a href="知识圣地.html">知识圣地</a></span>
+                    </div>
+                    <div class="line">
+                        <span><a href="blog留言.html">blog留言</a></span>
+                        <span><a href="首页.html">网站首页</a></span>
+                    </div>
+                    <div id="pic">
+                        <p>你的每一次评价</p>
+                         都是帮助博主奔向更好的自己
+                        <div class="other"><img src="视频/running.gif" width="120" height="60"/></div>
+                    </div>
+                </div>
+            </div>
+    </div>
+</body>
+</html>
